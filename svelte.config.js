@@ -1,13 +1,7 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import adapter from 'svelte-adapter-azure-swa';
+import azure from 'svelte-adapter-azure-swa';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-  kit: {
-    adapter: adapter(),
-    // other configurations...
-  },
-  // other configurations...
+export default {
+    kit: {
+        adapter: azure()
+    }
 };
-
-export default config;
